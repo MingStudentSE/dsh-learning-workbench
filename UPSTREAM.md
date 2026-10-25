@@ -1,0 +1,43 @@
+# 上游来源与许可
+
+本仓库以独立插件形式再分发以下 skill 资源。插件源码、工作台界面与学习战略适配由本仓库维护；三个内置 skill 的原始维护位置是 [skill-for-real-learner](https://github.com/MingStudentSE/skill-for-real-learner)。
+
+## 内置资源
+
+| 本仓库位置 | 来源 | 说明 |
+| --- | --- | --- |
+| `skills/strategyfinder/` | 本项目维护 | 学习战略入口、地图与决策卡格式 |
+| `skills/learn-modeling/` | 本项目维护 | 按需建模的参考资料 |
+| `skills/grilling/` | [mattpocock/skills](https://github.com/mattpocock/skills/tree/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grilling) | 正文与 `agents/openai.yaml` 原样保存，固定提交 `5beb35b040e3de97e54fa9e386d7e42d15c295c2` |
+| `skills/strategyfinder/references/research/` | [mattpocock/skills](https://github.com/mattpocock/skills/tree/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/research) | 正文原样保存，不复制 agents 配置 |
+| `skills/strategyfinder/references/prototype/` | [mattpocock/skills](https://github.com/mattpocock/skills/tree/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/prototype) | 正文、`LOGIC.md` 与 `UI.md` 原样保存，不复制 agents 配置 |
+
+内置 skill 由构建脚本复制到 `dist/skills/`，以低优先级 provider 暴露；已有项目或用户安装的同名 skill 优先。
+
+## Matt Pocock 上游许可
+
+以下声明适用于本仓库复制的上游内容，原文来自 [LICENSE](https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/LICENSE)。单独再分发这些内容时，应一并携带此声明。
+
+```text
+MIT License
+
+Copyright (c) 2026 Matt Pocock
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
